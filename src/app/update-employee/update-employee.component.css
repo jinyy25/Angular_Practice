@@ -1,0 +1,29 @@
+.text-center{
+    padding: 1.8em 0em 0em 0em;
+}
+
+.update-outline{
+    display: flex; 
+    justify-content: center;
+}
+
+.label-outline{
+    font-weight: 500;
+    padding: 1.5em 3em 0em 0em;
+    font-size: 1.2em;
+}
+.form-group-extra{
+    display: flex;
+    justify-content: space-between;
+}
+.input-extra{
+    border: none; 
+    outline: none;
+    font-size: 1.2em;
+}
+.form-group { padding: 0.5em 0;}
+
+.sub-label {width: 20%;}
+.form-control {width: 80%;}
+
+button {float: right;}

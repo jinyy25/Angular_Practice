@@ -1,0 +1,29 @@
+<div class="user-outline">
+    <div class="col-md-6">
+        <h2 class="text-center">Create Account</h2>
+        <hr/>
+        <form action="">
+            <div class="form-group">
+                <label for="">ID</label>
+                <input [(ngModel)]="user.userId" type="text" class="form-control" name="userId">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input [(ngModel)]="user.password" type="text" class="form-control" name="password">
+            </div>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input [(ngModel)]="user.userName" type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group">
+                <label for="">Phone</label>
+                <input [(ngModel)]="user.phone"  type="text" class="form-control" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="">Address</label>
+                <input [(ngModel)]="user.address"  type="text" class="form-control" name="address">
+            </div>
+            <button class="btn btn-success" (click)="createUser()">Create</button>
+        </form>
+    </div>
+</div>

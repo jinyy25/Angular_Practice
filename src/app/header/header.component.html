@@ -1,0 +1,25 @@
+<!-- navigation menu in header -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <ul class="navbar-nav">   
+            <li>
+                <a routerLink="/" class="nav-link">Main</a>
+            </li>     
+            <li *ngIf="authService.isLoggedIn()" [routerLinkActive]="['active']">
+                <a routerLink="/viewemployee" class="nav-link">View Board</a>
+            </li>
+            <li *ngIf="authService.isLoggedIn()" [routerLinkActive]="['active']">
+                <a routerLink="/addemployee" class="nav-link">Add Board</a>
+            </li>    
+            <li *ngIf="!authService.isLoggedIn()" [routerLinkActive]="['active']"> 
+                <a routerLink="/createuser" class="nav-link">Create Account</a>
+            </li>
+            <li *ngIf="!authService.isLoggedIn()" [routerLinkActive]="['active']"> 
+                <a routerLink="/signin" class="nav-link">Login</a>
+            </li>
+            <li *ngIf="authService.isLoggedIn()" [routerLinkActive]="['active']">
+                <a (click)="authService.logout()" class="nav-link">LogOut</a>
+            </li>
+        </ul>
+    </nav>
+</header>

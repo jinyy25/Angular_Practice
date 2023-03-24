@@ -1,0 +1,18 @@
+.user-outline{
+    display: flex; 
+    justify-content: center;
+}
+
+.text-center{
+    padding: 1.8em 0em 0.6em 0em;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+
+label {width: 20%;}
+input {width: 80%;}
+button {float: right;}

@@ -1,0 +1,25 @@
+<div class="col-mg-6">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>designation</th>
+                <th>salary</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>        
+        <tbody>
+            <!-- *ngFor : 배열 나열 -->
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.empId}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.designation}}</td>
+                <td>{{employee.salary}}</td>
+                <td><button class="btn btn-danger btn-option" (click)="deleteEmployee(employee)"> Delete</button></td>
+                <td><button class="btn btn-success btn-option" routerLink="/updateEmployee/{{employee.empId}}">Update</button></td>                
+            </tr>
+        </tbody>
+    </table>
+</div>
